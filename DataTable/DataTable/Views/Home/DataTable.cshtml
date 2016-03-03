@@ -1,0 +1,44 @@
+﻿@model DataTable.Models.SearchTextViewModel
+
+@using (Ajax.BeginForm("Search", new AjaxOptions { UpdateTargetId = "search-form-id", HttpMethod = "POST", OnComplete = "$('#example').DataTable({ 'language': { 'search': 'Filter:'}})" }))
+{
+    <div class="input-group margin">
+        @Html.TextBoxFor(model => model.SearchText, new { @class = "form-control", style = "max-width: none;" })
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-info btn-flat">Search</button>
+        </span>
+    </div>
+    <br />
+    <table id="example" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Rendering Engine</th>
+                <th>Browser</th>
+                <th>Platforms</th>
+                <th>Engine Version</th>
+                <th>CSS Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.Entries.Count; i++)
+            {
+                <tr>
+                    <td>@Model.Entries[i].RenderingEngine</td>
+                    <td>@Model.Entries[i].Browser</td>
+                    <td>@Model.Entries[i].Platforms</td>
+                    <td>@Model.Entries[i].EngineVersion</td>
+                    <td>@Model.Entries[i].CssGrade</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Rendering Engine</th>
+                <th>Browser</th>
+                <th>Platforms</th>
+                <th>Engine Version</th>
+                <th>CSS Grade</th>
+            </tr>
+        </tfoot>
+    </table>
+}

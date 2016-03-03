@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTable", "DataTable\DataTable.csproj", "{CF7818AE-CB5E-4347-9E86-95F8F95E5CBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTable.DataRepository", "DataTable.DataRepository\DataTable.DataRepository.csproj", "{1862DF13-B62A-4446-ADE9-83FEA273E3C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF7818AE-CB5E-4347-9E86-95F8F95E5CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7818AE-CB5E-4347-9E86-95F8F95E5CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7818AE-CB5E-4347-9E86-95F8F95E5CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7818AE-CB5E-4347-9E86-95F8F95E5CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1862DF13-B62A-4446-ADE9-83FEA273E3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1862DF13-B62A-4446-ADE9-83FEA273E3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1862DF13-B62A-4446-ADE9-83FEA273E3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1862DF13-B62A-4446-ADE9-83FEA273E3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

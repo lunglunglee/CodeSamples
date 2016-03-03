@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - DataTable Sample Application</title>
+    @Styles.Render("~/Styles/Shared/css")
+    @Scripts.Render("~/Scripts/Shared/modernizr")
+</head>
+<body>
+<div class="container body-content">
+    @RenderBody()
+    <hr/>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Bartosz Rachwal (AIST)</p>
+    </footer>
+</div>
+@Scripts.Render("~/Scripts/Shared/jquery")
+@Scripts.Render("~/Scripts/Shared/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+</html>
